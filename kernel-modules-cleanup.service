@@ -1,0 +1,9 @@
+[Unit]
+Description=Clean up modules from old kernels
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/share/kernel-backup-hooks/kernel-modules-cleanup.sh
+
+[Install]
+WantedBy=basic.target
